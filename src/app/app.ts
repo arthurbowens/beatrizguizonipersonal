@@ -15,7 +15,22 @@ export class App {
     { src: '/resultado1.png', alt: 'Transformação física — antes e depois, aluna BG Team' },
     { src: '/resultado2.png', alt: 'Evolução corporal — antes e depois, consultoria BG Team' },
     { src: '/resultado3.png', alt: 'Resultado de definição muscular — aluna BG Team' },
+    { src: '/resultado4.jpeg', alt: 'Evolução do abdômen — antes e depois, aluna BG Team' },
+    { src: '/resultado5.jpeg', alt: 'Transformação corporal — antes e depois, consultoria BG Team' },
+    { src: '/resultado6.jpeg', alt: 'Resultado de condicionamento e definição — aluna BG Team' },
   ];
+
+  protected readonly presencialFeatures = [
+    'Treino supervisionado presencialmente',
+    'Correção técnica em tempo real',
+    'Ajuste de carga e execução no momento',
+    'Estratégia alinhada ao seu objetivo',
+    'Ideal para quem prefere acompanhamento ao vivo',
+  ];
+
+  protected readonly whatsappPresencialMessage = encodeURIComponent(
+    'Olá Beatriz! Tenho interesse no personal presencial. Gostaria de saber sobre disponibilidade, valores e horários.',
+  );
   protected readonly currentYear = new Date().getFullYear();
   protected readonly whatsappUrl = 'https://wa.me/5548991321310';
   protected readonly whatsappTeamMessage = encodeURIComponent(

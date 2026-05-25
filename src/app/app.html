@@ -17,6 +17,7 @@
         <a href="#proposta" class="transition hover:text-purple-400">Consultoria</a>
         <a href="#sobre" class="transition hover:text-purple-400">Sobre</a>
         <a href="#resultados" class="transition hover:text-purple-400">Resultados</a>
+        <a href="#presencial" class="transition hover:text-purple-400">Presencial</a>
         <a href="#beneficios" class="transition hover:text-purple-400">Benefícios</a>
         <a href="#como-funciona" class="transition hover:text-purple-400">Como funciona</a>
         <a href="#planos" class="transition hover:text-purple-400">Planos</a>
@@ -331,6 +332,60 @@
         >
           Quero meus resultados também
         </a>
+      </div>
+
+      <!-- Personal presencial -->
+      <div
+        id="presencial"
+        class="mt-24 grid items-center gap-10 rounded-3xl border border-purple-500/20 bg-gradient-to-br from-purple-950/40 via-[#0d0d0d] to-[#0d0d0d] p-8 sm:p-10 lg:grid-cols-2 lg:gap-14"
+      >
+        <div class="text-center lg:text-left">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-purple-400">
+            Também disponível
+          </p>
+          <h3
+            class="mt-3 font-[family-name:var(--font-display)] text-3xl tracking-wide sm:text-4xl"
+          >
+            Personal <span class="gradient-text">presencial</span>
+          </h3>
+          <p class="mt-4 leading-relaxed text-zinc-400">
+            Além da consultoria online, ofereço acompanhamento presencial para quem prefere treinar
+            com supervisão direta, correção imediata e estratégia aplicada em tempo real.
+          </p>
+          <p class="mt-3 text-sm text-zinc-500">
+            Atendimento presencial sob consulta — região de Florianópolis e Grande Florianópolis.
+          </p>
+
+          <ul class="mt-6 space-y-2.5 text-left">
+            @for (item of presencialFeatures; track item) {
+              <li class="flex items-center gap-2.5 text-sm text-zinc-300 sm:text-base">
+                <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-purple-600/30 text-purple-400">
+                  <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                {{ item }}
+              </li>
+            }
+          </ul>
+
+          <a
+            [href]="whatsappUrl + '?text=' + whatsappPresencialMessage"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-block rounded-full bg-purple-600 px-8 py-3.5 text-sm font-bold uppercase tracking-wide transition hover:bg-purple-500"
+          >
+            Consultar personal presencial
+          </a>
+        </div>
+
+        <div class="photo-frame overflow-hidden rounded-2xl">
+          <img
+            [src]="aboutPhotoUrl"
+            alt="Beatriz Guizoni — personal trainer presencial"
+            class="aspect-[4/3] w-full object-cover object-center lg:aspect-[5/4]"
+          />
+        </div>
       </div>
     </div>
   </section>
