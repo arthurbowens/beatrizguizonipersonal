@@ -60,3 +60,12 @@ body {
   background: linear-gradient(135deg, #a855f7, #7c3aed 40%, #06b6d4);
   padding: 2px;
 }
+
+.carousel-result-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(78dvh, 560px);
+  object-fit: contain;
+  object-position: center;
+}
