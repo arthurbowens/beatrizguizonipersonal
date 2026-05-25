@@ -20,6 +20,8 @@ export class App {
     { src: '/resultado6.jpeg', alt: 'Resultado de condicionamento e definição — aluna BG Team' },
   ];
 
+  protected readonly presencialAreas = 'Florianópolis e Grande Florianópolis';
+
   protected readonly presencialFeatures = [
     'Treino supervisionado presencialmente',
     'Correção técnica em tempo real',
@@ -38,6 +40,20 @@ export class App {
   );
   protected readonly instagramUrl = 'https://instagram.com/treinadora_biaguizoni';
   protected readonly email = 'bgteamconsultoria@gmail.com';
+
+  protected readonly navLinks = [
+    { href: '#proposta', label: 'Consultoria' },
+    { href: '#sobre', label: 'Sobre' },
+    { href: '#resultados', label: 'Resultados' },
+    { href: '#presencial', label: 'Presencial' },
+    { href: '#beneficios', label: 'Benefícios' },
+    { href: '#como-funciona', label: 'Como funciona' },
+    { href: '#planos', label: 'Planos' },
+    { href: '#pagamento', label: 'Pagamento' },
+    { href: '#contato', label: 'Contato' },
+  ];
+
+  protected readonly menuOpen = signal(false);
 
   protected readonly heroHighlights = [
     'Treino individualizado',
@@ -214,5 +230,18 @@ export class App {
 
   protected goToResult(index: number): void {
     this.resultIndex.set(index);
+  }
+
+  protected toggleMenu(): void {
+    this.menuOpen.update((open) => {
+      const next = !open;
+      document.body.style.overflow = next ? 'hidden' : '';
+      return next;
+    });
+  }
+
+  protected closeMenu(): void {
+    this.menuOpen.set(false);
+    document.body.style.overflow = '';
   }
 }
