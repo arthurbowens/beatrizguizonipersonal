@@ -153,8 +153,6 @@ export class App {
     {
       id: 'mensal',
       name: 'Mensal',
-      price: 'R$ 300,00',
-      installment: null as string | null,
       highlight: false,
       outline: true,
       tag: null as string | null,
@@ -168,8 +166,6 @@ export class App {
     {
       id: 'trimestral',
       name: 'Trimestral',
-      price: 'R$ 870,00',
-      installment: 'até 3x',
       highlight: true,
       outline: false,
       tag: 'Mais escolhido',
@@ -183,8 +179,6 @@ export class App {
     {
       id: 'semestral',
       name: 'Semestral',
-      price: 'R$ 1.680,00',
-      installment: 'até 6x',
       highlight: false,
       outline: false,
       tag: null,
@@ -198,8 +192,6 @@ export class App {
     {
       id: 'anual',
       name: 'Anual',
-      price: 'R$ 3.120,00',
-      installment: 'até 12x',
       highlight: false,
       outline: false,
       tag: null,
