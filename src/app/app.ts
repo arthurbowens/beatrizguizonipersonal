@@ -34,7 +34,7 @@ export class App {
     'Olá Beatriz! Tenho interesse no personal presencial. Gostaria de saber sobre disponibilidade, valores e horários.',
   );
   protected readonly currentYear = new Date().getFullYear();
-  protected readonly whatsappUrl = 'https://wa.me/5548991321310';
+  protected readonly whatsappUrl = 'https://wa.me/5548991897143';
   protected readonly whatsappTeamMessage = encodeURIComponent(
     'Olá Beatriz! Quero fazer parte da BG Team. Gostaria de mais informações sobre os planos.',
   );
